@@ -1,6 +1,6 @@
 
 const { getIO } = require("../socket/socket"); // Path dhyan se check kar lena
-const Message = require("../models/Message");
+const Message = require("../models/message");
 
 // 🔥 1. SEND MESSAGE (Bina refresh ke dikhane wala logic)
 const sendMessage = async (req, res) => {
