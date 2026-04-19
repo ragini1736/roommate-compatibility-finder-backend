@@ -34,7 +34,10 @@ const authMiddleware = require("./middleware/auth");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://roommate-compatibility-finder-front.vercel.app", 
+  credentials: true
+}));
 app.use(express.json());
 
 // routes
